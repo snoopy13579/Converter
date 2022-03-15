@@ -1,0 +1,119 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorTest</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorTest1</item>
+    </style>
+
+    <!--自定义dialog背景全透明无边框theme -->
+    <style name="MyDialog" parent="android:style/Theme.Dialog">
+        <!--背景颜色及和透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!--splash主题-->
+    <style name="splash" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:background">@color/splash</item>
+    </style>
+
+    <!--首页按钮style-->
+    <style name="main_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@drawable/button_font_style</item>
+    </style>
+
+    <!--换算按钮-->
+    <style name="convert_btn_style">
+        <item name="android:layout_width">0sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:drawableStart">@drawable/btn_convert_selector</item>
+        <item name="android:paddingStart">5dp</item>
+    </style>
+
+    <!--返回首页按钮-->
+    <style name="back_btn_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:drawableStart">@drawable/back_selector</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:text">返回</item>
+        <item name="android:textColor">@drawable/button_font_style</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <!--输入框样式-->
+    <style name="edit_style">
+        <item name="android:layout_width">0sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">2.5</item>
+        <item name="android:background">@android:drawable/alert_light_frame</item>
+        <item name="android:hint">请在此处输入</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+
+    <!--标题文字-->
+    <style name="title_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/title_bar</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <!--刷新按钮-->
+    <style name="ref_btn_style">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginEnd">15dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:drawableRight">@drawable/reset_selector</item>
+        <item name="android:onClick">reset</item>
+    </style>
+
+    <!--彩色块文字-->
+    <style name="color_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">150sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingEnd">70dp</item>
+        <item name="android:paddingStart">70dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--单位样式-->
+    <style name="unit_text_style">
+        <item name="android:layout_width">0sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

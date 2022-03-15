@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Converter</string>
+    <drawable name="clr_normal">#3F00FF00</drawable>
+    <drawable name="clr_pressed">#3F339900</drawable>
+    <drawable name="clr_normal_1">#3F66FF00</drawable>
+    <drawable name="clr_pressed_1">#3F339900</drawable>
+    <drawable name="clr_normal_2">#CC000000</drawable>
+    <drawable name="clr_pressed_2">#CC222222</drawable>
+    <string name="title_bar">Converter v3.0</string>
+</resources>

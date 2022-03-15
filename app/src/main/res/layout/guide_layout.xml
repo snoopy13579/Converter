@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/guide_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECECEC"
+    android:orientation="vertical"
+    tools:context="cn.studyjams.s2.sj0196.Converter.guide">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            style="@style/back_btn_style"
+            android:onClick="back"/>
+
+        <TextView
+            android:id="@+id/a_123"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#000034"
+            android:gravity="center"
+            android:text="Converter使用说明"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <cn.studyjams.s2.sj0196.Converter.util.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:gravity="center"
+                android:text="点击要换算的单位\nClick On What You Want To Convert"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="260sp"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:src="@drawable/guide11" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#595B5D" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:gravity="center"
+                android:text="点击输入框输入数字\nClick The Input Box To Enter A Number"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="260sp"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:src="@drawable/guide12" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="260sp"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:src="@drawable/guide13" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#595B5D" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:gravity="center"
+                android:text="点击左侧相应的转换按钮\nClick The Transform Button On The Left"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="260sp"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:src="@drawable/guide14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#595B5D" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:gravity="center"
+                android:text="转换完成\nComplete The Conversion"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:gravity="center"
+                android:text="注：转换结果中“E”表示科学计数法\n例如，1E10代表1乘以10的10次方"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:gravity="center"
+                android:text="Note: The E in the transformation results represents the scientific notation\nFor example,1E10 stands for 1 times 10 to the 10th"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#595B5D" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:gravity="center"
+                android:text="点击重置清空数据\nClick RESET To Empty The Data"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="260sp"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:src="@drawable/guide15" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#595B5D" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:gravity="center"
+                android:text="点击返回回到主界面\nGo Back To The Main Screen"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="260sp"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:src="@drawable/guide17" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#595B5D" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:gravity="center"
+                android:text="开始体验吧！\nStart To Experience!"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#595B5D" />
+        </LinearLayout>
+    </cn.studyjams.s2.sj0196.Converter.util.ReboundScrollView>
+</LinearLayout>

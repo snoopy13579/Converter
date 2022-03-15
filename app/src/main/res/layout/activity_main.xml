@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="cn.studyjams.s2.sj0196.Converter.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/exit"
+            android:onClick="quit" />
+
+        <TextView
+            android:id="@+id/a_123"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:background="#000034"
+            android:gravity="center"
+            android:text="@string/title_bar"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:background="@android:color/transparent"
+            android:drawableEnd="@drawable/tipp"
+            android:onClick="guide" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/main_style"
+            android:drawableTop="@drawable/ruler"
+            android:background="@drawable/first_bg"
+            android:onClick="len"
+            android:text="长度\nlength" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF" />
+
+        <Button
+            style="@style/main_style"
+            android:drawableTop="@drawable/time"
+            android:background="@drawable/second_bg"
+            android:onClick="tim"
+            android:text="时间\ntime" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@android:color/transparent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/main_style"
+            android:drawableTop="@drawable/tempre"
+            android:onClick="tem"
+            android:background="@drawable/third_bg"
+            android:text="温度\ntemperature" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF" />
+
+        <Button
+            style="@style/main_style"
+            android:drawableTop="@drawable/weight1"
+            android:background="@drawable/fourth_bg"
+            android:onClick="wei"
+            android:text="质量\nweight" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@android:color/transparent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/main_style"
+            android:drawableTop="@drawable/speed"
+            android:background="@drawable/fifth_bg"
+            android:onClick="spe"
+            android:text="速度\nspeed" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF" />
+
+        <Button
+            style="@style/main_style"
+            android:drawableTop="@drawable/storage"
+            android:background="@drawable/sixth_bg"
+            android:onClick="sto"
+            android:text="存储\nStorage" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@android:color/transparent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/main_style"
+            android:drawableTop="@drawable/jinzhi"
+            android:background="@drawable/senven_bg"
+            android:onClick="jin"
+            android:text="进制\nHexadecimal" />
+
+
+    </LinearLayout>
+</LinearLayout>

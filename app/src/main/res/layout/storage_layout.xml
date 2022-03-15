@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/length_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="cn.studyjams.s2.sj0196.Converter.storage">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="@style/back_btn_style"
+            android:onClick="back_sto" />
+
+        <TextView style="@style/title_style" />
+
+        <Button style="@style/ref_btn_style" />
+
+    </RelativeLayout>
+
+    <cn.studyjams.s2.sj0196.Converter.util.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/color_text_style"
+                android:background="@drawable/sixth_bg"
+                android:drawableStart="@drawable/storage"
+                android:text="国际单位:B(字节)" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/convert_btn_style"
+                    android:onClick="converttb" />
+
+                <EditText
+                    android:id="@+id/storage_tb"
+                    style="@style/edit_style" />
+
+                <TextView
+                    style="@style/unit_text_style"
+                    android:text="太(TB)" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/convert_btn_style"
+                    android:onClick="convertgb" />
+
+                <EditText
+                    android:id="@+id/storage_gb"
+                    style="@style/edit_style" />
+
+                <TextView
+                    style="@style/unit_text_style"
+                    android:text="千兆(GB)" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/convert_btn_style"
+                    android:onClick="convertmb" />
+
+                <EditText
+                    android:id="@+id/storage_mb"
+                    style="@style/edit_style" />
+
+                <TextView
+                    style="@style/unit_text_style"
+                    android:text="兆(MB)" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/convert_btn_style"
+                    android:onClick="convertkb" />
+
+                <EditText
+                    android:id="@+id/storage_kb"
+                    style="@style/edit_style" />
+
+                <TextView
+                    style="@style/unit_text_style"
+                    android:text="千(KB)" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/convert_btn_style"
+                    android:onClick="convertb" />
+
+                <EditText
+                    android:id="@+id/storage_b"
+                    style="@style/edit_style" />
+
+                <TextView
+                    style="@style/unit_text_style"
+                    android:text="字节(B)" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/convert_btn_style"
+                    android:onClick="convertbit" />
+
+                <EditText
+                    android:id="@+id/storage_bit"
+                    style="@style/edit_style" />
+
+                <TextView
+                    style="@style/unit_text_style"
+                    android:text="比特(bit)" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </cn.studyjams.s2.sj0196.Converter.util.ReboundScrollView>
+</LinearLayout>

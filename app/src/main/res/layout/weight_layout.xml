@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/weight_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="cn.studyjams.s2.sj0196.Converter.weight">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="@style/back_btn_style"
+            android:onClick="back_wei" />
+
+        <TextView style="@style/title_style" />
+
+        <Button style="@style/ref_btn_style" />
+    </RelativeLayout>
+
+    <cn.studyjams.s2.sj0196.Converter.util.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/color_text_style"
+                android:background="@drawable/fourth_bg"
+                android:drawableStart="@drawable/weight1"
+                android:text="国际单位:kg(千克)" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/convert_btn_style"
+                    android:onClick="convertt" />
+
+                <EditText
+                    android:id="@+id/weight_t"
+                    style="@style/edit_style" />
+
+                <TextView
+                    style="@style/unit_text_style"
+                    android:text="吨(t)" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/convert_btn_style"
+                    android:onClick="convertkg" />
+
+                <EditText
+                    android:id="@+id/weight_kg"
+                    style="@style/edit_style" />
+
+                <TextView
+                    style="@style/unit_text_style"
+                    android:text="千克(kg)" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/convert_btn_style"
+                    android:onClick="convertj" />
+
+                <EditText
+                    android:id="@+id/weight_j"
+                    style="@style/edit_style" />
+
+                <TextView
+                    style="@style/unit_text_style"
+                    android:text="斤" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/convert_btn_style"
+                    android:onClick="convertke" />
+
+                <EditText
+                    android:id="@+id/weight_g"
+                    style="@style/edit_style" />
+
+                <TextView
+                    style="@style/unit_text_style"
+                    android:text="克(g)" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/convert_btn_style"
+                    android:onClick="convertmg" />
+
+                <EditText
+                    android:id="@+id/weight_mg"
+                    style="@style/edit_style" />
+
+                <TextView
+                    style="@style/unit_text_style"
+                    android:text="毫克(mg)" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/convert_btn_style"
+                    android:onClick="convertug" />
+
+                <EditText
+                    android:id="@+id/weight_ug"
+                    style="@style/edit_style" />
+
+                <TextView
+                    style="@style/unit_text_style"
+                    android:text="微克(μg)" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </cn.studyjams.s2.sj0196.Converter.util.ReboundScrollView>
+</LinearLayout>

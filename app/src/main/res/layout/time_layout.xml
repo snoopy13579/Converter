@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/time_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="cn.studyjams.s2.sj0196.Converter.time">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="@style/back_btn_style"
+            android:onClick="back_time" />
+
+        <TextView style="@style/title_style" />
+
+        <Button style="@style/ref_btn_style" />
+
+    </RelativeLayout>
+
+    <cn.studyjams.s2.sj0196.Converter.util.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/color_text_style"
+                android:background="@drawable/second_bg"
+                android:drawableStart="@drawable/time"
+                android:text="国际单位:s(秒)" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/convert_btn_style"
+                    android:onClick="convertc" />
+
+                <EditText
+                    android:id="@+id/time_c"
+                    style="@style/edit_style" />
+
+                <TextView
+                    style="@style/unit_text_style"
+                    android:text="世纪" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/convert_btn_style"
+                    android:onClick="converty" />
+
+                <EditText
+                    android:id="@+id/time_y"
+                    style="@style/edit_style" />
+
+                <TextView
+                    style="@style/unit_text_style"
+                    android:text="年(y)" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rad_btn_year1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="平年（365天）"
+                        android:textColor="#FFFFFF" />
+
+                    <RadioButton
+                        android:id="@+id/rad_btn_year2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="闰年（366天）"
+                        android:textColor="#FFFFFF" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/convert_btn_style"
+                    android:onClick="convertm" />
+
+                <EditText
+                    android:id="@+id/time_m"
+                    style="@style/edit_style" />
+
+                <TextView
+                    style="@style/unit_text_style"
+                    android:text="月(m)" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rad_btn_day1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="28天"
+                        android:textColor="#FFFFFF" />
+
+                    <RadioButton
+                        android:id="@+id/rad_btn_day2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="29天"
+                        android:textColor="#FFFFFF" />
+
+                    <RadioButton
+                        android:id="@+id/rad_btn_day3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30天"
+                        android:textColor="#FFFFFF" />
+
+                    <RadioButton
+                        android:id="@+id/rad_btn_day4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="31天"
+                        android:textColor="#FFFFFF" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/convert_btn_style"
+                    android:onClick="convertw" />
+
+                <EditText
+                    android:id="@+id/time_w"
+                    style="@style/edit_style" />
+
+                <TextView
+                    style="@style/unit_text_style"
+                    android:text="周(w)" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/convert_btn_style"
+                    android:onClick="convertd" />
+
+                <EditText
+                    android:id="@+id/time_d"
+                    style="@style/edit_style" />
+
+                <TextView
+                    style="@style/unit_text_style"
+                    android:text="日(d)" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/convert_btn_style"
+                    android:onClick="converth" />
+
+                <EditText
+                    android:id="@+id/time_h"
+                    style="@style/edit_style" />
+
+                <TextView
+                    style="@style/unit_text_style"
+                    android:text="小时(h)" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/convert_btn_style"
+                    android:onClick="convertmin" />
+
+                <EditText
+                    android:id="@+id/time_min"
+                    style="@style/edit_style" />
+
+                <TextView
+                    style="@style/unit_text_style"
+                    android:text="分钟(min)" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/convert_btn_style"
+                    android:onClick="converts" />
+
+                <EditText
+                    android:id="@+id/time_s"
+                    style="@style/edit_style" />
+
+                <TextView
+                    style="@style/unit_text_style"
+                    android:text="秒(s)" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </cn.studyjams.s2.sj0196.Converter.util.ReboundScrollView>
+</LinearLayout>

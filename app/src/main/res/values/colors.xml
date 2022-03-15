@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#AE5AE4</color>
+    <color name="colorTest">#000034</color>
+    <color name="colorTest1">#CBCBCB</color>
+
+    <color name="my_dialog_press">#ECECEC</color>
+    <color name="my_dialog_unpress">#FFFFFF</color>
+    <color name="splash">#000000</color>
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/time_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="cn.studyjams.s2.sj0196.Converter.speed">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="@style/back_btn_style"
+            android:onClick="back_speed" />
+
+        <TextView style="@style/title_style" />
+
+        <Button style="@style/ref_btn_style" />
+
+    </RelativeLayout>
+
+    <cn.studyjams.s2.sj0196.Converter.util.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/color_text_style"
+                android:background="@drawable/fifth_bg"
+                android:drawableStart="@drawable/speed"
+                android:text="国际单位:m/s(米/秒)" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/convert_btn_style"
+                    android:onClick="convertcc" />
+
+                <EditText
+                    android:id="@+id/speed_c"
+                    style="@style/edit_style" />
+
+                <TextView
+                    style="@style/unit_text_style"
+                    android:text="光速(c)" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/convert_btn_style"
+                    android:onClick="convertkmh" />
+
+                <EditText
+                    android:id="@+id/speed_km"
+                    style="@style/edit_style" />
+
+                <TextView
+                    style="@style/unit_text_style"
+                    android:text="千米/时(km/h)" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/convert_btn_style"
+                    android:onClick="convertms" />
+
+                <EditText
+                    android:id="@+id/speed_m"
+                    style="@style/edit_style" />
+
+                <TextView
+                    style="@style/unit_text_style"
+                    android:text="米/秒(m/s)" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </cn.studyjams.s2.sj0196.Converter.util.ReboundScrollView>
+</LinearLayout>

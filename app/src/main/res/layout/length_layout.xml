@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/length_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="cn.studyjams.s2.sj0196.Converter.length">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="@style/back_btn_style"
+            android:onClick="back_length" />
+
+        <TextView style="@style/title_style" />
+
+        <Button style="@style/ref_btn_style" />
+
+    </RelativeLayout>
+
+    <cn.studyjams.s2.sj0196.Converter.util.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/color_text_style"
+                android:background="@drawable/first_bg"
+                android:drawableStart="@drawable/ruler"
+                android:text="国际单位:m(米)" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/convert_btn_style"
+                    android:onClick="convertly" />
+
+                <EditText
+                    android:id="@+id/length_ly"
+                    style="@style/edit_style" />
+
+                <TextView
+                    style="@style/unit_text_style"
+                    android:text="光年(ly)" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/convert_btn_style"
+                    android:onClick="convertkm" />
+
+                <EditText
+                    android:id="@+id/length_km"
+                    style="@style/edit_style" />
+
+                <TextView
+                    style="@style/unit_text_style"
+                    android:text="公里(km)" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/convert_btn_style"
+                    android:onClick="convertm" />
+
+                <EditText
+                    android:id="@+id/length_m"
+                    style="@style/edit_style" />
+
+                <TextView
+                    style="@style/unit_text_style"
+                    android:text="米(m)" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/convert_btn_style"
+                    android:onClick="convertcm" />
+
+                <EditText
+                    android:id="@+id/length_cm"
+                    style="@style/edit_style" />
+
+                <TextView
+                    style="@style/unit_text_style"
+                    android:text="厘米(cm)" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/convert_btn_style"
+                    android:onClick="convertmm" />
+
+                <EditText
+                    android:id="@+id/length_mm"
+                    style="@style/edit_style" />
+
+                <TextView
+                    style="@style/unit_text_style"
+                    android:text="毫米(mm)" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/convert_btn_style"
+                    android:onClick="convertum" />
+
+                <EditText
+                    android:id="@+id/length_um"
+                    style="@style/edit_style" />
+
+                <TextView
+                    style="@style/unit_text_style"
+                    android:text="微米(μm)" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/convert_btn_style"
+                    android:onClick="convertnm" />
+
+                <EditText
+                    android:id="@+id/length_nm"
+                    style="@style/edit_style" />
+
+                <TextView
+                    style="@style/unit_text_style"
+                    android:text="纳米(nm)" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </cn.studyjams.s2.sj0196.Converter.util.ReboundScrollView>
+</LinearLayout>
